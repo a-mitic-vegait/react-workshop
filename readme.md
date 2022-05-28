@@ -1,12 +1,5 @@
 # Vega React workshop v1
 
----
-
-title: "Introduction"
-description: "What you can expect to learn"
-
----
-
 This workshop is going to be unique as compared to other React introductions because this course attempts to teach you not only React but the ecosystem around React. When I was learning React myself, I found myself frustrated that it seemed like every tutorial started on step 14 and left out the steps 1-13 of how to set up a React project. React is nearly never used by itself, so it's useful to know the tools you're using. I believe you, as a developer, should know how your tools work and what purpose they're serving. Hopefully, given the knowledge of the problem solved by the tool, you'll embrace the tools despite their complexities due to the ease and power they offer you.
 
 ## Who is this workshop for
