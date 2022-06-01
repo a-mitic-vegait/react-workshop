@@ -8,6 +8,9 @@ const ElaborateInput = forwardRef(
         focus() {
           inputRef.current.focus();
         },
+        sayHi() {
+          console.log("say hi");
+        },
       };
     });
     return (
@@ -56,6 +59,7 @@ const ImperativeHandleComponent = () => {
 
     setError("");
     alert("valid form!");
+    cityEl.current.sayHi();
   }
 
   return (

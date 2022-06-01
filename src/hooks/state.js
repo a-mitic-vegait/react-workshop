@@ -5,7 +5,7 @@ const StateComponent = () => {
 
   return (
     <h1
-      onClick={() => setIsGreen(!isGreen)}
+      onClick={() => setIsGreen((prevState) => !prevState)}
       style={{ color: isGreen ? "limegreen" : "crimson" }}
     >
       useState Example
