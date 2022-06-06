@@ -9,4 +9,6 @@ It can be useful for things like holding on to setInterval and setTimeout IDs so
 
 In our example one thing to keep in mind that the state and the ref's number are always the same. They are never out of lockstep since they're updated at the same time. However, since we delay the logging for a second, when it alerts the new values, it will capture what the state was when we first called the timeout (since it's held on to by the closure) but it will always log the current value since that ref is on an object that React consistently gives the same object back to you. Because it's the same object and the number is a property on the object, it will always be up to date and not subject to the closure's scope.
 
-It's also useful for referencing DOM nodes.
+You only can assign to ref object current property, nothing else.
+
+Also use case for useRef if you need to refer to a specific dom element in your code, you can assign ref to it.

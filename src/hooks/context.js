@@ -7,7 +7,6 @@ const UserContext = createContext([
     suffix: 1,
     email: "bobovicson@example.rs",
   },
-  (obj) => obj,
 ]);
 
 const LevelFive = () => {
@@ -18,7 +17,10 @@ const LevelFive = () => {
       <h5>{`${user.firstName} ${user.lastName} the ${user.suffix} born`}</h5>
       <button
         onClick={() => {
-          setUser(Object.assign({}, user, { suffix: user.suffix + 1 }));
+          setUser({
+            ...user,
+            suffix: user.suffix + 1,
+          });
         }}
       >
         Increment

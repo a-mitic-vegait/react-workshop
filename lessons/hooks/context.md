@@ -9,3 +9,5 @@ Context allows you to create a wormhole where stuff goes in and a wormhole in a 
 In general, context adds a decent amount of complexity to an app. A bit of prop drilling is fine. Only put things in context that are truly application-wide state like user information or auth keys and then use local state for the rest. There is a design concept in react that is called compound components which puts molecul levels in context.
 
 Often you'll use context instead of Redux or another state store. You could get fancy and use useReducer and useContext together to get a pretty great approximation of Redux-like features.
+
+Make sure that you put things in conext is that is application level state, things like users, you have to read and write user account from all over my application.
